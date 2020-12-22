@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js gen
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js watch
 
 PATH: 
   /Users/hirataarisa/opt/anaconda3/bin:/Users/hirataarisa/opt/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/hirataarisa/Library/Android/sdk/emulator:/Users/hirataarisa/Library/Android/sdk/tools:/Users/hirataarisa/Library/Android/sdk/tools/bin:/Users/hirataarisa/Library/Android/sdk/platform-tools:/Users/hirataarisa/Library/Android/sdk/emulator:/Users/hirataarisa/Library/Android/sdk/tools:/Users/hirataarisa/Library/Android/sdk/tools/bin:/Users/hirataarisa/Library/Android/sdk/platform-tools:/Users/hirataarisa/Downloads/redis-stable/src
