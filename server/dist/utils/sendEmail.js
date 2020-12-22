@@ -21,14 +21,14 @@ function sendEmail(to, html) {
             port: 587,
             secure: false,
             auth: {
-                user: "k3jvwvisb3ykvs56@ethereal.email",
-                pass: "GJ1W5W7YbTNqVe4fVU",
+                user: "mds43vi6nviwucqv@ethereal.email",
+                pass: "xJsQzVAuFYKqx5xUR9",
             },
         });
         let info = yield transporter.sendMail({
             from: '"Fred Foo 👻" <foo@example.com>',
-            to,
-            subject: "Change Password",
+            to: to,
+            subject: "Change password",
             html,
         });
         console.log("Message sent: %s", info.messageId);

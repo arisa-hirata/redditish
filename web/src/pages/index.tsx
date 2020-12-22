@@ -2,7 +2,7 @@ import { withUrqlClient } from "next-urql";
 import { createUrqlClient } from "../utils/createUrqlClient";
 import { usePostsQuery } from "../generated/graphql";
 import { Layout } from "../components/Layout";
-import { Box, Button, Flex, Heading, Link, Stack, Text } from "@chakra-ui/core";
+import { Link, Stack, Box, Heading, Text, Flex, Button } from "@chakra-ui/core";
 import NextLink from "next/link";
 import { useState } from "react";
 
@@ -15,17 +15,17 @@ const Index = () => {
     console.log(variables);
 
     const [{ data, fetching }] = usePostsQuery({
-        variables
+        variables,
     });
 
     if (!fetching && !data) {
-        return <div>you got failed for some reason</div>;
+        return <div>you got query failed for some reason</div>;
     }
 
     return (
         <Layout>
             <Flex align="center">
-                <Heading>Redditish</Heading>
+                <Heading>LiReddit</Heading>
                 <NextLink href="/create-post">
                     <Link ml="auto">create post</Link>
                 </NextLink>
@@ -49,15 +49,15 @@ const Index = () => {
                         onClick={() => {
                             setVariables({
                                 limit: variables.limit,
-                                cursor: data.posts[data.posts.length - 1].createdAt
+                                cursor: data.posts[data.posts.length - 1].createdAt,
                             });
-                    }}
+                        }}
                         isLoading={fetching}
                         m="auto"
                         my={8}
                     >
-                        Load more
-                    </Button>
+                        load more
+          </Button>
                 </Flex>
             ) : null}
         </Layout>
