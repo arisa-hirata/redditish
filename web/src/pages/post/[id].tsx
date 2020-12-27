@@ -33,12 +33,14 @@ const Post = ({ }) => {
 
     return (
         <Layout>
-            <Heading mb={4}>{data.post.title}</Heading>
-            <Box mb={4}>{data.post.text}</Box>
-            <EditDeletePostButtons
-                id={data.post.id}
-                creatorId={data.post.creator.id}
-            />
+            <Box p={5} shadow="md" borderWidth="1px" bg="white">
+                <Heading mb={4}>{data.post.title}</Heading>
+                <Box mb={4}>{data.post.text}</Box>
+                <EditDeletePostButtons
+                    id={data.post.id}
+                    creatorId={data.post.creator.id}
+                    />
+            </Box>
         </Layout>
     );
 };
