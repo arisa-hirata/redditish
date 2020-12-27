@@ -5,6 +5,7 @@ import { useLogoutMutation, useMeQuery } from "../generated/graphql";
 import { isServer } from "../utils/isServer";
 import { useRouter } from "next/router";
 
+
 interface NavBarProps { }
 
 export const NavBar: React.FC<NavBarProps> = ({ }) => {
@@ -54,11 +55,11 @@ export const NavBar: React.FC<NavBarProps> = ({ }) => {
     }
 
     return (
-        <Flex zIndex={1} position="sticky" top={0} bg="tan" p={4} align="cneter">
+        <Flex zIndex={1} position="sticky" top={0} bg="white" p={4} align="cneter">
             <Flex flex={1} m="auto" align="center" maxWidth={800}>
                 <NextLink href="/">
                     <Link>
-                        <Heading>Redittish</Heading>
+                        <Heading><span font-color="#FE4602">Re</span>dittish</Heading>
                     </Link>
                 </NextLink>
                 <Box ml={"auto"}>{body}</Box>

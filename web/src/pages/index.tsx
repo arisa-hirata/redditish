@@ -30,7 +30,7 @@ const Index = () => {
                     <Stack spacing={8}>
                         {data!.posts.posts.map((p) =>
                             !p ? null : (
-                                <Flex key={p.id} p={5} shadow="md" borderWidth="1px">
+                                <Flex key={p.id} p={5} shadow="md" borderWidth="1px" bg="white">
                                     <UpdootSection post={p} />
                                     <Box flex={1}>
                                         <NextLink href="/post/[id]" as={`/post/${p.id}`}>
