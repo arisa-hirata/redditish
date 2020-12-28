@@ -8,7 +8,7 @@ redditish is a web application which allows users to create posts, edit posts, d
 - React
 - TypeScript
 - GraphQL
-- Apollo
+- URQL
 - Node.js
 - PostgreSQL
 - TypeORM
